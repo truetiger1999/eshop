@@ -1,0 +1,115 @@
+<div id="review-modal" class="modal hidden">
+  <div class="review-modal-content">
+    <button class="close" id="close-modal" aria-label="Close">
+      <svg aria-hidden="true" class="review-modal__icon">
+        <use href="sprite.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <form
+      action="#"
+      method="post"
+      class="review-modal__form"
+      id="reviewForm"
+      novalidate
+    >
+      <fieldset>
+        <legend class="review-modal__form-title">
+          Leave a review <span>about</span>&nbsp;<span
+            >our pumpkins</span
+          >
+        </legend>
+        <div class="review-modal__field">
+          <input
+            class="review-modal__input"
+            type="text"
+            id="review-modal-name"
+            name="review-modal-name"
+            maxlength="50"
+            minlength="2"
+            autocomplete="off"
+            aria-describedby="review-modal-name-error"
+            required
+          />
+          <label for="review-modal-name" class="review-modal__label"
+            >Name</label
+          >
+          <p
+            class="review-modal__error-message"
+            id="review-modal-name-error"
+          ></p>
+        </div>
+        <div class="review-modal__field">
+          <input
+            class="review-modal__input"
+            type="email"
+            id="review-modal-email"
+            name="review-modal-email"
+            maxlength="64"
+            autocomplete="off"
+            aria-describedby="review-modal-email-error"
+            required
+          />
+          <label for="review-modal-email" class="review-modal__label"
+            >Email</label
+          >
+          <p
+            class="review-modal__error-message"
+            id="review-modal-email-error"
+          ></p>
+        </div>
+        <div class="review-modal__field">
+          <div class="phone-input">
+            <input
+              class="review-modal__input"
+              type="tel"
+              id="review-modal-phone"
+              name="review-modal-phone"
+              aria-describedby="review-modal-phone-error"
+              required
+            />
+            <span class="phone-input__icon">
+              <img
+                src="images/us-flag-icon.png"
+                alt="United States flag"
+              />
+              +1
+            </span>
+            <label
+              for="review-modal-phone"
+              class="review-modal__label"
+            >
+              Phone number
+            </label>
+            <p
+              class="review-modal__error-message"
+              id="review-modal-phone-error"
+            ></p>
+          </div>
+        </div>
+        <div class="review-modal__field">
+          <textarea
+            id="review-modal-message"
+            name="review-modal-message"
+            maxlength="200"
+            rows="5"
+            aria-describedby="review-modal-message-error"
+            required
+          ></textarea>
+          <label
+            for="review-modal-message"
+            class="review-modal__label"
+          >
+            Message
+          </label>
+          <p
+            class="review-modal__error-message"
+            id="review-modal-message-error"
+          ></p>
+        </div>
+        <button class="review-modal__submit" type="submit">
+          Send
+        </button>
+      </fieldset>
+    </form>
+  </div>
+</div>
